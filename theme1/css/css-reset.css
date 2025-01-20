@@ -1,0 +1,68 @@
+* {
+  padding: 0 !important;
+  margin: 0 !important;
+  box-sizing: border-box !important;
+}
+ul {
+  list-style: none !important;
+}
+.container {
+  max-width: 75% !important;
+}
+a {
+  text-decoration: none !important;
+}
+:root {
+  --color-primary: #002a5c !important;
+  --color-subprimary: #001e42 !important;
+  --hover-danger: #a30713;
+}
+.icon-chervon-left {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(45deg);
+}
+.icon-chervon-right {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(225deg);
+}
+.icon-chervon-bottom {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+}
+
+.icon-chervon-top {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid gray;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(134deg);
+}
+
+@media (max-width: 1360px) {
+  .container {
+    max-width: 95% !important;
+  }
+}
+
+@media (max-width: 954px) {
+    .container {
+      max-width: 80% !important;
+    }
+  }
