@@ -1,6 +1,12 @@
 #banner-home-container {
   width: 100%;
-  height: 384px;
+  height: auto;
+}
+#banner-home-container > a img {
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+  display: none !important;
 }
 #banner-home-container > .slick-dots {
   bottom: -8%;
@@ -331,12 +337,12 @@
   height: auto;
   object-fit: cover;
 }
-.slick-ads .slick-item img{
+.slick-ads .slick-item img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.slick-ads .slick-track{
+.slick-ads .slick-track {
   display: flex;
   align-items: center;
 }
@@ -360,3 +366,70 @@
   border-right: 0;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    max-width: 95% !important;
+  }
+  #home-hot-title-section .slick-slide {
+    margin-right: 5px !important;
+  }
+  #home-hot-title-section .slick-next {
+    right: -10%;
+  }
+  #container-nuce-news .nuce-item-content {
+    width: 464px;
+    height: 300px;
+  }
+
+  #container-nuce-news .nuce-item-content2 {
+    width: 220px;
+    height: 300px;
+    box-shadow: 0 0 2px gray;
+    position: relative;
+  }
+  #home-hot-title-section .container {
+    max-width: 85% !important;
+  }
+  #home-hot-title-section .slick-slide {
+    margin-left: 20px !important;
+  }
+  #home-hot-title-section .slick-prev {
+    left: -3%;
+  }
+  #home-hot-title-section .slick-next {
+    right: -9%;
+  }
+}
+
+@media (max-width: 821px) {
+  .nuce-new-item .nuce-item-content2 {
+    display: none;
+  }
+  #container-nuce-news > div > div > div.col-lg-3.nuce-new-item.ps-4 {
+    padding: 0 !important;
+    margin-top: 30px !important;
+  }
+  #ts-title .ts-title-container {
+    display: block;
+  }
+  #ts-title .ts-title-container .ts-title-item {
+    margin-bottom: 20px !important;
+  }
+
+  #container-nuce-news > div > div {
+    display: block !important;
+  }
+  #container-nuce-news
+    > div
+    > div
+    > div.col-lg-9.nuce-new-item
+    > div.row.justify-content-between.gap-4
+    > div.col-lg-7.nuce-item-content {
+    width: 100% !important;
+  }
+  #ts-title .ts-title-container > .ts-title-item{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 20px !important;
+  }
+}
