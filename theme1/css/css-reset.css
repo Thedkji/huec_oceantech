@@ -55,6 +55,46 @@ a {
   transform: rotate(134deg);
 }
 
+.slick-prev {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: 3%;
+  transform: translateX(-45%);
+  outline: none;
+  border: none;
+  opacity: 0.7;
+}
+.slick-next {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  right: 0.5%;
+  transform: translateX(-45%);
+  outline: none;
+  border: none;
+  opacity: 0.7;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+  transform: translateX(-48%);
+  display: flex;
+  gap:10px
+}
+.slick-dots > li > button {
+  font-size: 0;
+  width: 13px;
+  height: 13px;
+  border-radius: 20px;
+  border: none;
+}
+
+.slick-dots > li.slick-active > button {
+  background-color: var(--hover-danger);
+}
+
 @media (max-width: 1360px) {
   .container {
     max-width: 95% !important;
@@ -62,7 +102,7 @@ a {
 }
 
 @media (max-width: 954px) {
-    .container {
-      max-width: 80% !important;
-    }
+  .container {
+    max-width: 80% !important;
   }
+}
