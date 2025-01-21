@@ -154,6 +154,9 @@
   #nav-home > ul.menu-main-home {
     gap: 20px;
   }
+  #container-nuce-news .nuce-item-content{
+    max-width: 540px;
+  }
 }
 
 @media (max-width:954px) {
@@ -161,3 +164,5 @@
     display: none;
   }
 }
+
+
