@@ -1,0 +1,39 @@
+#nav-link-header {
+  background-color: #ccd3da;
+}
+#nav-link-header > div:first-child > ul {
+  display: flex;
+  gap: 10px;
+  padding: 5px 0 !important;
+}
+#nav-link-header > div:first-child > ul a {
+  color: black;
+  transition: color 0.3s linear;
+}
+#nav-link-header > div:first-child > ul a:hover {
+  color: var(--hover-danger);
+}
+#nav-link-header > div:first-child > ul i {
+  font-size: 13px;
+  font-weight: bold;
+  color: black;
+}
+
+.notification-container .article-social li{
+    width: 25px;
+    height: 25px;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(203, 199, 199);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.notification-container .article-social li a{
+    color: white;
+}
+
+.notification-container .article-social li:hover{
+    background-color: #007dff!important;   
+}
+

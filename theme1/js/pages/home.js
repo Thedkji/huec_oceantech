@@ -105,6 +105,34 @@ function home() {
       },
     ],
   });
+
+  let btnNews = $("#container-nuce-news > div > div > div.col-lg-3.nuce-new-item.ps-4 > div.d-flex > h3:nth-child(1)")
+  let btnEvent = $("#container-nuce-news > div > div > div.col-lg-3.nuce-new-item.ps-4 > div.d-flex > h3:nth-child(2)")
+
+  let postNews = $(".nuce-new-item").find(".post-news");
+  console.log("🚀 ~ home ~ postNews:", postNews)
+  let postEvent = $(".nuce-new-item").find(".post-event");
+  
+
+  $(btnNews).css("cursor", "pointer");
+  $(btnNews).addClass("btn-home-active");
+  
+  $(btnEvent).css("cursor", "pointer");
+  $(btnEvent).css("alignContent", "center");
+
+  $(btnNews).click(function () {
+    $(postNews).removeClass("d-none");
+    $(postEvent).addClass("d-none");
+    $(btnNews).addClass("btn-home-active");
+    $(btnEvent).removeClass("btn-home-active");
+  });
+
+  $(btnEvent).click(function () {
+    $(postEvent).removeClass("d-none");
+    $(postNews).addClass("d-none");
+    $(btnEvent).addClass("btn-home-active");
+    $(btnNews).removeClass("btn-home-active");
+  });
 }
 
 export default home();
