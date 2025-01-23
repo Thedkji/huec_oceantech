@@ -15,7 +15,7 @@ function home() {
       {
         breakpoint: 1025,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
@@ -29,6 +29,22 @@ function home() {
       },
     ],
   });
+
+  $("#banner-home-container").on(
+    "afterChange",
+    function (event, slick, currentSlide) {
+      const textBanner = $("#banner-home-container .text-banner-content");
+
+      // Reset animation bằng cách loại bỏ và thêm lại giá trị animation
+      textBanner.css("animation", "none"); // Gỡ animation
+      setTimeout(function () {
+        textBanner.css(
+          "animation",
+          "fade-down-text-banner 0.7s linear forwards"
+        );
+      }, 50); // Delay cực nhỏ để browser có thời gian xử lý
+    }
+  );
 
   $("#home-hot-title-section>div").slick({
     infinite: true,
@@ -106,17 +122,20 @@ function home() {
     ],
   });
 
-  let btnNews = $("#container-nuce-news > div > div > div.col-lg-3.nuce-new-item.ps-4 > div.d-flex > h3:nth-child(1)")
-  let btnEvent = $("#container-nuce-news > div > div > div.col-lg-3.nuce-new-item.ps-4 > div.d-flex > h3:nth-child(2)")
+  let btnNews = $(
+    "#container-nuce-news > div > div > div.col-lg-3.nuce-new-item.ps-4 > div.d-flex > h3:nth-child(1)"
+  );
+  let btnEvent = $(
+    "#container-nuce-news > div > div > div.col-lg-3.nuce-new-item.ps-4 > div.d-flex > h3:nth-child(2)"
+  );
 
   let postNews = $(".nuce-new-item").find(".post-news");
-  console.log("🚀 ~ home ~ postNews:", postNews)
+  console.log("🚀 ~ home ~ postNews:", postNews);
   let postEvent = $(".nuce-new-item").find(".post-event");
-  
 
   $(btnNews).css("cursor", "pointer");
   $(btnNews).addClass("btn-home-active");
-  
+
   $(btnEvent).css("cursor", "pointer");
   $(btnEvent).css("alignContent", "center");
 

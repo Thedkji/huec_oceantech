@@ -1,0 +1,87 @@
+#container-news-admissions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-block: 50px !important ;
+}
+
+#container-news-admissions h3:first-child {
+  text-transform: uppercase;
+  color: var(--color-primary);
+  margin-bottom: 20px !important;
+}
+
+#container-news-admissions .content-news {
+  display: flex;
+  gap: 30px;
+}
+#container-news-admissions .content-news:not(:last-child) {
+  margin-bottom: 35px !important;
+}
+
+#container-news-admissions .content-news img {
+  max-width: 207px;
+  height: 117px;
+}
+
+#container-news-admissions .content-news h3 {
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 500;
+}
+.container-news-item .news-read-more {
+  text-align: end;
+}
+.container-news-item .news-read-more svg{
+  color: var(--color-primary);
+}
+.container-news-item .news-read-more span{
+  color: var(--color-primary);
+}
+
+#bg-why h3:first-child{
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: 20px !important;
+}
+
+#bg-why .bg-why-section{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+#bg-why .bg-why-section .bg-why-item {
+
+  text-align: center;
+}
+
+#bg-why .bg-why-section .bg-why-item>img{
+  max-width: 100px;
+  height: 100px;
+}
+
+#bg-why .bg-why-section .bg-why-item:nth-child(2)>img{
+  max-width: 200px;
+  height: 100px;
+}
+
+#bg-why .bg-why-section .bg-why-item p{
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+
+#bg-why .bg-why-section .bg-why-item .fa-star{
+  color: yellow;
+  width: 37px;
+  height: 40px;
+}
+
+
+#bg-why .bg-why-section .bg-why-item p:first-child{
+  font-size: 60px;
+  height: 100px;
+}
+
+
