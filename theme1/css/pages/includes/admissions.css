@@ -85,3 +85,62 @@
 }
 
 
+#banner-home-container .text-banner-content .title {
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px !important;
+}
+
+#banner-home-container .text-banner-content .title p {
+  max-width: 600px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+#banner-home-container .text-banner-content .btn-read-more {
+  max-width: 20%;
+  margin-top: 30px !important;
+  background-color: #e2a606;
+  color: white;
+  text-align: center;
+  border-radius: 3px;
+  padding-block: 8px !important;
+  transition: color 0.3s linear;
+}
+
+#banner-home-container .text-banner-content {
+  left: 20%;
+  top:  0%;
+}
+
+#banner-home-container .text-banner-content .btn-read-more:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid #e2a606;
+  animation:fade-in-btn-read-more 0.5s linear;
+}
+
+@keyframes fade-in-btn-read-more {
+  0%{
+    background-color: transparent;
+  }
+  100%{
+    background-color: white;
+    color: black;
+    border: 1px solid #e2a606;
+  }
+}
+
+@keyframes fade-down-text-banner {
+  0%{
+    top:  0%;
+  }
+  50%{
+    top: 10%;
+  }
+  100%{
+    top: 20%;
+  }
+}
+

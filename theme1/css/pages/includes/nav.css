@@ -10,7 +10,7 @@
   align-items: center;
   gap: 20px;
   margin: auto !important;
-  height: 20px;
+  height: 50px;
 }
 
 #nav-home > ul.menu-main-home > li:first-child > a > img {
