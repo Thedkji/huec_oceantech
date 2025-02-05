@@ -130,7 +130,6 @@ function home() {
   );
 
   let postNews = $(".nuce-new-item").find(".post-news");
-  console.log("🚀 ~ home ~ postNews:", postNews);
   let postEvent = $(".nuce-new-item").find(".post-event");
 
   $(btnNews).css("cursor", "pointer");

@@ -1,0 +1,161 @@
+.student-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+}
+.student-container .content .fillter h5:last-child a{
+  color: red;
+}
+.student-container .content .fillter > div:first-child {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.student-container .content .fillter > div:first-child button {
+  border: 1px solid rgb(124, 188, 248);
+  border-radius: 3px;
+  padding: 2px 5px !important;
+  font-size: 14px;
+}
+
+.student-container .content .fillter > div:first-child button:focus {
+  box-shadow: 0 0 0 3px rgb(178, 218, 255);
+}
+
+.student-container .content .form-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.student-container .content .form-content select,
+.student-container .content .form-content input {
+  width: 100%;
+  border: 1px solid rgb(223, 222, 222);
+  border-radius: 3px;
+  height: 30px;
+  outline: none;
+  padding-left: 10px !important;
+}
+
+.student-container .content .form-content div:nth-of-type(n + 3) {
+  width: 143px;
+}
+
+.student-container .content .action-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px !important;
+  gap: 5px;
+}
+
+.student-container .content .action-form button {
+  border: none;
+  outline: none;
+  padding: 3px 8px !important;
+  border-radius: 3px;
+}
+.student-container .content .action-form button:first-child {
+  background-color: #189cb1;
+  color: white;
+}
+.student-container .content .action-form button:last-child {
+  background-color: #ffc107;
+}
+
+.student-container .content .action-form button:first-child:hover {
+  background-color: #168698;
+  color: white;
+}
+.student-container .content .action-form button:last-child:hover {
+  background-color: #eab20a;
+}
+
+.student-container .content .fillter > div:nth-child(2) {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+.student-container nav ul a {
+  color: #005ab7;
+  font-weight: 500;
+}
+.student-container nav ul {
+  border-bottom: 1px solid rgb(223, 217, 217);
+  margin-bottom: 10px !important;
+}
+.student-container nav ul li {
+  padding: 10px !important;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.student-container nav ul li.active {
+  border: 1px solid rgb(223, 217, 217);
+  padding: 10px !important;
+}
+
+.student-container .calendar-content {
+  height: 430px;
+  overflow-y: scroll;
+}
+.student-container .calendar-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.student-container .calendar-content::-webkit-scrollbar-thumb {
+  background-color: #6ba5e0;
+}
+
+.student-container .calendar-content .calendar-item {
+  display: flex;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 30px !important;
+}
+
+.student-container .calendar-content .calendar-item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background-color: rgb(222, 221, 221);
+  bottom: -10px;
+}
+.student-container .calendar-content .calendar-item > div:first-child {
+  flex-basis: 120px;
+  text-align: center;
+}
+.student-container
+  .calendar-content
+  .calendar-item
+  > div:first-child
+  span:first-child {
+  background-color: #005ab7;
+  padding: 5px 10px !important;
+  color: white;
+  font-size: 13px;
+}
+
+.student-container .calendar-content .calendar-item > div:first-child h3 {
+  color: #005ab7;
+  margin-top: 10px !important;
+}
+.student-container .calendar-content .calendar-item > div:nth-child(2) h5 a {
+  color: #005ab7;
+}
+
+.student-container
+  .calendar-content
+  .calendar-item
+  > div:nth-child(2)
+  h5
+  > p:last-child
+  a {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px !important;
+}
