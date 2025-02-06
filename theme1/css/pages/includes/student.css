@@ -1,9 +1,9 @@
 .student-container {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 20px;
+  gap: 50px;
 }
-.student-container .content .fillter h5:last-child a{
+.student-container .content .fillter h5:last-child a {
   color: red;
 }
 .student-container .content .fillter > div:first-child {
@@ -101,6 +101,7 @@
   height: 430px;
   overflow-y: scroll;
 }
+
 .student-container .calendar-content::-webkit-scrollbar {
   width: 5px;
 }
@@ -158,4 +159,117 @@
   color: red;
   font-size: 14px;
   margin-top: 10px !important;
+}
+
+.student-container .login {
+  background-color: white;
+  box-shadow: 0 0 5px 0 rgb(203, 202, 202);
+  border-radius: 5px;
+  padding: 5px !important;
+  min-height: 695px;
+}
+.student-container .login-wallpaper {
+  background: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  box-shadow: 2px 8px 15px rgba(0, 0, 0, 0.2);
+  padding: 30px !important;
+}
+
+.student-container .login-wallpaper h4:nth-child(2){
+  color: #044eb7;
+  margin: 20px !important;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+.student-container .login-wallpaper form div:first-child input{
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  font-style: italic;
+  padding-left: 15px !important;
+  outline: none;
+  border: none;
+}
+
+.student-container .login-wallpaper form div:first-child input:not(:last-child){
+  margin-bottom: 10px !important;
+}
+
+.student-container .login-wallpaper form div:nth-child(2){
+  display: flex;
+  justify-content: end;
+  margin: 10px auto !important;
+  gap: 5px;
+}
+
+.student-container .login-wallpaper form .capcha input:first-child{
+  padding: 5px 15px !important;
+}
+
+.student-container .login-wallpaper form .capcha input:first-child{
+  padding: 5px 15px !important;
+  outline: none;
+
+}
+
+.student-container .login-wallpaper form div:nth-child(4){
+  margin: 20px auto !important;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.student-container .login-wallpaper form div:nth-child(4)>button{
+  padding: 12px !important;
+  border-radius: 5px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 1px 1px rgba(0, 0, 0, .25);
+  border: none;
+}
+
+.student-container .login-wallpaper form div:nth-child(4)>button:nth-child(1):hover{
+  filter: brightness(0.9);
+}
+
+.student-container .login-wallpaper form div:nth-child(4)>button:nth-child(1){
+  border: 1px solid #ff5a00;
+  background-color: #ff5a00;
+  border-bottom: 5px solid #dc560d !important;
+  color: white;
+}
+
+.student-container .login-wallpaper form div:nth-child(4)>button:nth-child(2){
+  position: relative;
+}
+
+.student-container .login-wallpaper form div:nth-child(4)>button:nth-child(2) .login-with-microsoft-btn{
+  color: #0056b3
+}
+.student-container .login-wallpaper form div:nth-child(4)>button:nth-child(2):hover{
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, .04), 0 2px 4px rgba(0, 0, 0, .25);
+}
+.student-container .login-wallpaper form div:nth-child(4)>button:nth-child(2)>img:first-child{
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-right: 1px solid rgb(214, 208, 208);
+  padding: 6% !important;
+}
+.student-container .login-wallpaper form div:last-child{
+  text-align: end;
+}
+.student-container .login-wallpaper form div:last-child span{
+  width: 50%;
+  font-size: 12px;
+  background-color: #25c6cb;
+  padding: 5px 8px !important;
+  border-radius: 3px;
+}
+.student-container .login-wallpaper form div:last-child a{
+ color: white;
+}
+
+@media screen and (max-width:1342px) {
+  
 }

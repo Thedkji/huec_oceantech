@@ -1,4 +1,5 @@
 #header-home {
+  width: 100%;
   background-color: var(--color-primary);
   padding-block: 15px !important;
   position: relative;
@@ -131,6 +132,7 @@
     font-size: 12px;
   } 
   #header-home{
+    width: 100%;
    background-color: var(--color-subprimary);
   }
 
