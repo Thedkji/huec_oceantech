@@ -1,0 +1,68 @@
+.scientific-research nav {
+  margin-top: 5px !important;
+  background-color: rgba(27, 80, 141, 1);
+}
+.scientific-research nav .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.scientific-research nav .menu .fa-home {
+  font-size: 22px;
+  color: #ffeb3b;
+}
+.scientific-research nav .menu a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-weight: bold;
+}
+.scientific-research nav .menu .icon-chervon-bottom {
+  display: block;
+  width: 7px;
+  height: 7px;
+  border: 2px solid white;
+  border-top: 0;
+  border-right: 0;
+  transform: rotate(-45deg);
+}
+
+.scientific-research nav .menu li {
+  position: relative;
+  height: 100%;
+  padding: 10px !important;
+}
+.scientific-research nav>.menu>li a,
+.scientific-research nav>.menu>li .icon-chervon-bottom {
+  transition: all 0.3s ease-in-out;
+}
+.scientific-research nav>.menu>li a:hover,
+.scientific-research nav>.menu>li a:hover .icon-chervon-bottom {
+  border-color: #ffeb3b;
+  color: #ffeb3b;
+}
+
+.scientific-research nav .menu li:hover .submenu {
+  max-height: 500px;
+}
+
+.scientific-research nav .menu li .submenu {
+  position: absolute;
+  left: 0;
+  top: 102%;
+  background-color: rgba(27, 80, 141, 1);
+  width: max-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-out;
+  z-index: 20;
+}
+.scientific-research nav .submenu li:not(:last-of-type) {
+  box-shadow: 0 0 1px 0 white;
+}
+
+.scientific-research nav .menu li .submenu li {
+  padding: 7px 15px !important;
+  font-size: 13px;
+}

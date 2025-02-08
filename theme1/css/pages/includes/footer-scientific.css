@@ -1,0 +1,15 @@
+footer {
+    background-color: #5b9bd5 !important;
+     background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    border: 2px solid rgba(86, 129, 169, 0.2);
+    padding: 0 15px 5px !important;
+}
+
+footer>div:first-of-type{
+     display: flex;
+     font-size: 14px;
+     margin-top: 10px !important;
+     justify-content: space-between;
+}

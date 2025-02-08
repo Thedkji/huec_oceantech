@@ -12,4 +12,9 @@
 @import url("./pages/includes/train.css");
 @import url("./pages/includes/student.css");
 
+@import url('./pages/includes/header-scientific.css');
+@import url('./pages/includes/nav-scientific.css');
+@import url('./pages/includes/scientific-research.css');
+@import url('./pages/includes/footer-scientific.css');
+
 @import url("./pages/includes/footer.css");

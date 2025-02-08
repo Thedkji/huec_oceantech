@@ -1,0 +1,40 @@
+.scientific-research header {
+    height: 130px;
+    position: relative;
+}
+
+.scientific-research header div:nth-child(1){
+    position: absolute;
+    right: 20px;
+    display: flex; 
+    flex-direction: column;
+}
+
+.scientific-research header div:nth-child(1) a{
+    color: #2d3e98;
+    font-size: 14px;
+}
+
+.scientific-research header div:nth-child(2){
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.scientific-research header div:nth-child(2) input{
+   position: relative;
+   width: 17rem;
+   padding-left: 10px !important;
+}
+
+.scientific-research header div:nth-child(2) button{
+    position: absolute;
+    right: 0;
+    width: 4rem;
+    border-color:#112b80;
+    background: #112b80;
+    outline: none;
+    color: white;
+}
+
+
+
